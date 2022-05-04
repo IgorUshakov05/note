@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="https://unpkg.com/vue@3"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <p class="oa" id="sleep">Загрузка...</p>
+        <div class="datatime">
+        <p id="date">Текущая дата - 00:00:0000</p>
+        <p id="time">Текущее время - 00:00:00</p>
+        </div>
+        <div class="form">
+            <p>Заметки</p>
+            <div class="f">
+            <input type="text"
+            v-model="value"
+            @keyup.enter="add(value)"
+            placeholder="Введите заметку">
+            <br>
+
+            <div class="sek">
+                <button 
+                :disabled="this.value == /\S/.test(this.value) && this.value != '1'"
+                @click="add(value)">ДОБАВИТЬ</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <button class="delall" @click="removeing()" v-if="list.length != 0">Удалить все</button>
+        <p class="not" v-if="list.length == 0">У вас нет заметок</p>
+        <ul>
+            <li class="lol" v-for="value, index in list">
+        
+               {{index+1}}) {{value.text}}
+            <p class="uy">Время: {{value.time}}</p>
+                <button 
+                class="daa"
+                @click="remove(index)">Удалить</button></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

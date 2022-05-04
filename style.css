@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    color: #006064;
+}
+#app {
+    width: 99%;
+    margin: auto;
+}
+.datatime {
+    background: #FFECB3;
+    width: fit-content;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding-top: 3px;
+    border-radius: 15px;
+}
+.form {
+    background: #FFECB3;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.form button {
+    margin-top: 15px;
+    background-color: #FFECB3;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+    transition: 0.5s;
+    padding: 5px 9px;
+}
+.form button:hover {
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+.form input {
+    margin-bottom: 10px;
+    width: 40%;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+ul li {
+list-style-type: none;
+display: block;
+}
+.oa {
+    text-align: center;
+}
+.dis {
+    background-color: red   ;
+}
+.lol {
+    width: fit-content;
+    max-width: 98%;
+    padding: 10px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #FFECB3;
+    border-radius: 10px;
+}
+.delall {
+    padding-left: 40px;
+    margin-top: 15px;
+    margin-left: 40px;
+    background-color: #f8eac4;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+    padding: 5px 9px;
+    transition: 0.2s;
+}
+.delall:hover {
+    background-color: #f15858;
+}
+.daa {
+    margin-top: 15px;
+    background-color: #f8eac4;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+    padding: 5px 9px;
+    transition: 0.2s;
+    width: 100%;
+
+}
+.daa:hover {
+    background-color: #f07878;
+}
+.uy {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 0px;
+}
+.not {
+    margin-left: 40px;
+    margin-top: 40px;
+}
